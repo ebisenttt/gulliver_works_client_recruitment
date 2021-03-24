@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { atom, useRecoilState } from "recoil";
-import { Account } from "../data/Account";
-import { HttpClient } from "../utilities/axiosInstance";
+import { Account } from "../Account";
+import { HttpClient } from "../../utilities/axiosInstance";
 
 const accountState = atom<Account | undefined>({
   key: "account",
