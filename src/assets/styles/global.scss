@@ -1,0 +1,45 @@
+$font-family: "Non Sans JP";
+@mixin bold {
+  font-family: $font-family;
+  font-weight: bold;
+}
+
+h1 {
+  @include bold;
+  font-size: 32px;
+}
+
+h2 {
+  @include bold;
+  font-size: 24px;
+}
+
+h3 {
+  @include bold;
+  font-size: 20px;
+}
+
+h4 {
+  @include bold;
+  font-size: 16px;
+}
+
+// .body1 {
+//   font-family: $font-family;
+//   font-size: 16px;
+// }
+
+caption {
+  font-family: $font-family;
+  font-size: 14px;
+}
+
+// .hoge{
+//   font-family: $font-family;
+//   font-size: 14px;
+// }
+
+label {
+  font-family: $font-family;
+  font-size: 12px;
+}

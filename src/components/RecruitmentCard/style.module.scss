@@ -1,81 +1,33 @@
 .card {
   /* RecruitCard */
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 380px;
-  left: 47px;
-  top: 152px;
-  /* LightGray */
-  border: 1px solid #F8F8F8;
+  border: 1px solid #AFAFAF;
   box-sizing: border-box;
   border-radius: 4px;
-  .cardContainer {
-    /* Rectangle 78 */
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    /* White */
-    background: #FFFFFF;
-    /* MediumGray */
-    border: 1px solid #AFAFAF;
-    box-sizing: border-box;
-    border-radius: 4px;
       .cardImage {
-        /* Rectangle 77 */
-        position: absolute;
         left: 0.17%;
         right: 0.17%;
         top: 0.26%;
         bottom: 42.11%;
 
         // background: url(Checker.png);
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 4px 4px 0px 0px;
       }
       .title {
-        position: absolute;
-        left: 5.33%;
-        right: 5.33%;
-        top: 64.21%;
-        bottom: 20.53%;
-    
-        font-family: Noto Sans JP;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 29px;
-    
-        color: #000000;
-    
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 58px;
+        width: 536px;
+        margin: 24px 32px 0 24px;
       }
       .company{
-        .companyAvatar {
-          position: absolute;
-          left: 5.33%;
-          right: 86.67%;
-          top: 81.75%;
-          bottom: 5.61%;
-        }
-        .companyName {
-          position: absolute;
-          left: 14.73%;
-          right: 75.94%;
-          top: 85%;
-          bottom: 9.74%;
-      
-          font-family: Noto Sans JP;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 20px;
-      
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        margin-left: 32px;
+        .companyName{
+          margin-left: 8.38px;
           color: #AFAFAF;
         }
       }
-  }
 }
