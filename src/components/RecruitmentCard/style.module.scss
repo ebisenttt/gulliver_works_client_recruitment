@@ -1,17 +1,10 @@
 .card {
-  /* RecruitCard */
-  position: relative;
   width: 600px;
   height: 380px;
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
   border-radius: 4px;
       .cardImage {
-        left: 0.17%;
-        right: 0.17%;
-        top: 0.26%;
-        bottom: 42.11%;
-
         // background: url(Checker.png);
         border-radius: 4px 4px 0px 0px;
       }
@@ -27,6 +20,7 @@
         margin-left: 32px;
         .companyName{
           margin-left: 8.38px;
+          font-size: 14px;
           color: #AFAFAF;
         }
       }

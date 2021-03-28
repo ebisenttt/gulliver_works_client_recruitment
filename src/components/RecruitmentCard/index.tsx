@@ -16,8 +16,8 @@ const RecruitmentCard: React.FC<Props> = ({imageSrc, title,　companyName}) => {
         <img className={styles.cardImage} src={imageSrc}/>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.company}>
-          <Avator size='small'/>
-          <caption className={styles.companyName}>{companyName}</caption>
+          <Avator size='medium'/>
+          <div className={styles.companyName}>{companyName}</div>
         </div>
       </div>
   )

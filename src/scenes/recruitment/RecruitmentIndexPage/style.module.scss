@@ -1,3 +1,30 @@
-.text {
-  color: black;
+$margin-left: 300px;
+
+body {
+  padding-top: 100px;
+}
+
+.recommendations{
+  margin-bottom: 64px;
+  h1 {
+    margin: 0 0 32px $margin-left;
+  }
+  ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      margin-right: 16px;
+    }
+  }
+}
+
+.all {
+  margin-left: $margin-left;
+  h1{
+    margin-bottom: 32px;
+  }
+  li {
+    margin-bottom: 24px;
+  }
 }
