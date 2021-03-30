@@ -12,10 +12,6 @@ const App: FC = () => (
       <Route exact path="/" component={RecruitmentIndexPage} />
       <Route path="/sign_in" component={SignInPage} />
     </div>
-    <RecruitmentCard
-      title="タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル"
-      companyName="会社名"
-    />
   </BrowserRouter>
 );
 

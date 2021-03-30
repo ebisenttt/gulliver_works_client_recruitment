@@ -1,33 +1,27 @@
 .card {
-  /* RecruitCard */
-  position: relative;
   width: 600px;
   height: 380px;
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
   border-radius: 4px;
-      .cardImage {
-        left: 0.17%;
-        right: 0.17%;
-        top: 0.26%;
-        bottom: 42.11%;
-
-        // background: url(Checker.png);
-        border-radius: 4px 4px 0px 0px;
-      }
-      .title {
-        height: 58px;
-        width: 536px;
-        margin: 24px 32px 0 24px;
-      }
-      .company{
-        height: 48px;
-        display: inline-flex;
-        align-items: center;
-        margin-left: 32px;
-        .companyName{
-          margin-left: 8.38px;
-          color: #AFAFAF;
-        }
-      }
+  .cardImage {
+    // background: url(Checker.png);
+    border-radius: 4px 4px 0px 0px;
+  }
+  .title {
+    height: 58px;
+    width: 536px;
+    margin: 24px 32px 0;
+  }
+  .company{
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 32px;
+    .companyName{
+      margin-left: 8.38px;
+      font-size: 14px;
+      color: #AFAFAF;
+    }
+  }
 }
