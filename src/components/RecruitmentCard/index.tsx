@@ -12,10 +12,12 @@ type Props = {
 const RecruitmentCard: React.FC<Props> = ({imageSrc=defaultImage, title,　companyName}) => (
   <div className={styles.card}>
     <img className={styles.cardImage} src={imageSrc}/>
-    <h3 className={styles.title}>{title}</h3>
-    <div className={styles.company}>
-      <Avator size="small"/>
-      <div className={styles.companyName}>{companyName}</div>
+    <div className={styles.container}>
+      <h3 className={styles.title}>{title}</h3>
+      <div className={styles.company}>
+        <Avator size="small"/>
+        <div className={styles.companyName}>{companyName}</div>
+      </div>
     </div>
   </div>
 );

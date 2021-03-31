@@ -1,27 +1,30 @@
 .card {
-  width: 600px;
-  height: 380px;
+  max-width: 600px;
+  width: 100%;
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
   border-radius: 4px;
   .cardImage {
     // background: url(Checker.png);
+    width:100%;
     border-radius: 4px 4px 0px 0px;
   }
-  .title {
-    height: 58px;
-    width: 536px;
-    margin: 24px 32px 0;
-  }
-  .company{
-    height: 48px;
-    display: inline-flex;
-    align-items: center;
-    margin-left: 32px;
-    .companyName{
-      margin-left: 8.38px;
-      font-size: 14px;
-      color: #AFAFAF;
+  .container{
+    padding: 0 32px;
+    .title {
+      width: 536px;
+      margin-top: 24px;
+    }
+    .company{
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      // margin-left: 32px;
+      .companyName{
+        margin-left: 8.38px;
+        font-size: 14px;
+        color: #AFAFAF;
+      }
     }
   }
 }
