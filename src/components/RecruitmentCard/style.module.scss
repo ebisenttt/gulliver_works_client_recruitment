@@ -1,5 +1,6 @@
 .card {
   max-width: 600px;
+  min-width: 320px;
   width: 100%;
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
@@ -9,19 +10,24 @@
     width:100%;
     border-radius: 4px 4px 0px 0px;
   }
-  .container{
-    padding: 0 32px;
+  .content{
+    padding: 24px 31px;
     .title {
-      width: 536px;
-      margin-top: 24px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      margin-bottom: 8px;
     }
     .company{
-      height: 48px;
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      // margin-left: 32px;
       .companyName{
-        margin-left: 8.38px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-left: 8px;
         font-size: 14px;
         color: #AFAFAF;
       }

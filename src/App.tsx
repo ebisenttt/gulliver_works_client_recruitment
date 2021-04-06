@@ -13,7 +13,7 @@ const App: FC = () => (
       <Route path="/sign_in" component={SignInPage} />
     </div>
     <RecruitmentCard
-      title="タイトル"
+      title="3度の飯よりReact！フロントエンドのエキスパートになりたいエンジニア募集！"
        companyName="会社名"
     />
   </BrowserRouter>
