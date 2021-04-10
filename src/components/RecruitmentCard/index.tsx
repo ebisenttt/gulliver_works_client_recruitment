@@ -1,33 +1,30 @@
 import React from "react";
+import Avator from "../../atoms/Avator";
 import styles from "./style.module.scss";
+import defaultImg from "./cardDefault.png"
 
 type Props = {
-  imageSrc: string;
+  imageSrc?: string;
   title: string;
-  companyAvatarSrc: string;
   companyName: string;
 }
 
-const RecruitmentCard: React.FC<Props> = (props) => {
-  const {
-    imageSrc,
-    title,
-    companyAvatarSrc,
-    companyName
-  } = props;
+const RecruitmentCard: React.FC<Props> = ({imageSrc, title,　companyName}) => {
 
   return (
     <div className={styles.card}>
-      <div className={styles.cardContainer}>
         <img className={styles.cardImage} src={imageSrc}/>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.company}>
-          <img className={styles.companyAvatar} src={companyAvatarSrc} />
-          <p className={styles.companyName}>{companyName}</p>
+          <Avator size='medium'/>
+          <div className={styles.companyName}>{companyName}</div>
         </div>
       </div>
-    </div>
   )
 };
+
+RecruitmentCard.defaultProps = {
+  imageSrc: defaultImg
+}
 
 export default RecruitmentCard;
