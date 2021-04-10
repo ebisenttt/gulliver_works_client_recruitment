@@ -1,4 +1,4 @@
-import { useCurrentAccount } from "../../hooks/useCurrentAccount";
+import { useCurrentAccount } from "../../data/hooks/useCurrentAccount";
 import { Account } from "../../data/Account";
 import { HttpClient } from "../../utilities/axiosInstance";
 

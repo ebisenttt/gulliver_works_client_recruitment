@@ -1,8 +1,10 @@
 import React, { FC } from "react";
 import "./App.scss";
+import "./assets/styles/global.scss"
 import { BrowserRouter, Route } from "react-router-dom";
 import RecruitmentIndexPage from "./scenes/recruitment/RecruitmentIndexPage";
 import SignInPage from "./scenes/signIn";
+import RecruitmentCard from "./components/RecruitmentCard";
 
 const App: FC = () => (
   <BrowserRouter>
@@ -10,6 +12,10 @@ const App: FC = () => (
       <Route exact path="/" component={RecruitmentIndexPage} />
       <Route path="/sign_in" component={SignInPage} />
     </div>
+    <RecruitmentCard
+      title="3度の飯よりReact！フロントエンドのエキスパートになりたいエンジニア募集！"
+       companyName="会社名"
+    />
   </BrowserRouter>
 );
 

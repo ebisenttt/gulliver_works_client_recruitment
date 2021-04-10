@@ -1,0 +1,44 @@
+$font-family: "Noto Sans JP";
+@mixin bold {
+  font-family: $font-family;
+  font-weight: bold;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1 {
+  @include bold;
+  font-size: 2.0rem;
+}
+
+h2 {
+  @include bold;
+  font-size: 1.5rem;
+}
+
+h3 {
+  @include bold;
+  font-size: 1.25rem;
+}
+
+h4 {
+  @include bold;
+  font-size: 1.0rem;
+}
+
+// .body1 {
+//   font-family: $font-family;
+//   font-size: 16px;
+// }
+
+caption {
+  font-family: $font-family;
+  font-size: 0.85rem;
+}
+
+label {
+  font-family: $font-family;
+  font-size: 0.75rem;
+}
