@@ -11,6 +11,7 @@ const App: FC = () => (
       <Route exact path="/" component={RecruitmentIndexPage} />
       <Route path="/sign_in" component={SignInPage} />
     </div>
+    <RecruitmentIndexPage />
   </BrowserRouter>
 );
 
