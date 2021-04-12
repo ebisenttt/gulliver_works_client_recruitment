@@ -4,23 +4,23 @@
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
   border-radius: 4px;
-      .cardImage {
-        border-radius: 4px 4px 0px 0px;
-      }
-      .title {
-        height: 58px;
-        width: 536px;
-        margin: 24px 32px 0 24px;
-      }
-      .company{
-        height: 48px;
-        display: inline-flex;
-        align-items: center;
-        margin-left: 32px;
-        .companyName{
-          margin-left: 8px;
-          font-size: 14px;
-          color: #AFAFAF;
-        }
-      }
+  .cardImage {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .title {
+    height: 58px;
+    width: 536px;
+    margin: 24px 32px 0 24px;
+  }
+  .company{
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 32px;
+    .companyName{
+      margin-left: 8px;
+      font-size: 14px;
+      color: #AFAFAF;
+    }
+  }
 }
