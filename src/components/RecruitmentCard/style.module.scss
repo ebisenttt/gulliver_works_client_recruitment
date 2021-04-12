@@ -5,7 +5,6 @@
   box-sizing: border-box;
   border-radius: 4px;
       .cardImage {
-        // background: url(Checker.png);
         border-radius: 4px 4px 0px 0px;
       }
       .title {
@@ -19,7 +18,7 @@
         align-items: center;
         margin-left: 32px;
         .companyName{
-          margin-left: 8.38px;
+          margin-left: 8px;
           font-size: 14px;
           color: #AFAFAF;
         }
