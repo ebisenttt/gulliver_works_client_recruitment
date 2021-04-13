@@ -28,10 +28,12 @@ const RecruitmentIndexPage = () => {
   const cardsList = (list: Array<{title: string, companyName: string}>) => (
     list.map((item, index) => (
       <li key={index}>
-        <RecruitmentCard
-          title={item.title}
-          companyName={item.companyName}
-        />
+        <div className={styles.wrapper}>
+          <RecruitmentCard
+            title={item.title}
+            companyName={item.companyName}
+          />
+        </div>
       </li>
     ))
   );
@@ -39,6 +41,7 @@ const RecruitmentIndexPage = () => {
   const settings = {
     className: "center",
     centerMode: true,
+    // centerPadding: "10%",
     variableWidth: true,
     speed: 500,
     infinite: true,
@@ -53,9 +56,9 @@ const RecruitmentIndexPage = () => {
         <div className={styles.recommendations}>
           <h1>おすすめの募集</h1>
           <ul>
-            <Slider {...settings}>
-              {cardsList(recommendations)}
-            </Slider>
+              <Slider {...settings}>
+                {cardsList(recommendations)}
+              </Slider>
           </ul>
         </div>
       }

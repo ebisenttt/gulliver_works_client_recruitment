@@ -1,24 +1,19 @@
-$margin-left: 300px;
-
 body {
   padding-top: 100px;
+  div {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .recommendations{
   margin-bottom: 64px;
-  h1 {
-    margin: 0 0 32px $margin-left;
-  }
-  li RecruitmentCard{
-    
+  .wrapper {
+    margin: 0 16px;
   }
 }
 
 .all {
-  margin-left: $margin-left;
-  h1{
-    margin-bottom: 32px;
-  }
   li {
     margin-bottom: 24px;
   }
