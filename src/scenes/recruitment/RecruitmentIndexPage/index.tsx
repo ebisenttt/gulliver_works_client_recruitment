@@ -39,9 +39,7 @@ const RecruitmentIndexPage = () => {
   );
 
   const settings = {
-    className: "center",
     centerMode: true,
-    // centerPadding: "10%",
     variableWidth: true,
     speed: 500,
     infinite: true,
@@ -56,7 +54,7 @@ const RecruitmentIndexPage = () => {
         <div className={styles.recommendations}>
           <h1>おすすめの募集</h1>
           <ul>
-              <Slider {...settings}>
+              <Slider className={styles.slider} {...settings}>
                 {cardsList(recommendations)}
               </Slider>
           </ul>
