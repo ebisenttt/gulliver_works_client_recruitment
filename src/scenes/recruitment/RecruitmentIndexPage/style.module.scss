@@ -1,6 +1,5 @@
 body {
   padding-top: 100px;
-  padding-left: 25vw;
 }
 
 h1 {
@@ -9,23 +8,16 @@ h1 {
 
 .recommendations{
   margin-bottom: 64px;
-  // ul {
-    // margin: 0 calc(50% - 50vw);
-    // width: 100vw;
-    // overflow: visible;
-  // }
-  .wrapper {
-    margin: 0 16px;
+  h1 {
+    margin-left: 25vw;
   }
-
-  .slider {
-    // margin-left: clac(((100vw - 100%) / 2) * -1);
-    width: 100vw;
-    margin-left: -25vw;
+  .wrapper {
+    margin-right: 32px;
   }
 }
 
 .all {
+  margin-left: 25vw;
   li {
     margin-bottom: 24px;
   }
