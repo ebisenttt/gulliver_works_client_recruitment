@@ -1,3 +1,24 @@
-.text {
-  color: black;
+body {
+  padding-top: 100px;
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.recommendations{
+  margin-bottom: 64px;
+  h1 {
+    margin-left: 25vw;
+  }
+  .wrapper {
+    margin-right: 32px;
+  }
+}
+
+.all {
+  margin-left: 25vw;
+  li {
+    margin-bottom: 24px;
+  }
 }
