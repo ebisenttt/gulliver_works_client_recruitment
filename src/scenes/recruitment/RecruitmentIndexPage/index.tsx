@@ -1,35 +1,45 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./style.module.scss";
-// import { Link } from "react-router-dom";
 import RecruitmentCard from "../../../components/RecruitmentCard";
 import Carousel from "../../../components/Carousel";
-
-import { isTemplateExpression } from "typescript";
+import axios from "axios";
 import { useCurrentAccount } from "../../../data/hooks/useCurrentAccount";
 
 const RecruitmentIndexPage = () => {
-  const [recommendations, setRecommnedations] = useState([
-    {title: "おすすめ1", companyName: "会社1"},
-    {title: "おすすめ2", companyName: "会社2"},
-    {title: "おすすめ3", companyName: "会社3"},
-    {title: "おすすめ4", companyName: "会社4"},
-    {title: "おすすめ5", companyName: "会社5"},
-    {title: "おすすめ6", companyName: "会社6"}
-  ]);
+  type RecruitmentCardProps = React.ComponentProps<typeof RecruitmentCard>;
+  const [recommendations, setRecommnedations] = useState<RecruitmentCardProps[]>([]);
+  const [all, setAll] = useState<RecruitmentCardProps[]>([]);
 
-  const [all, setAll] = useState([
-    {title: "ぼしゅう1", companyName: "会社1"},
-    {title: "ぼしゅう2", companyName: "会社2"},
-    {title: "ぼしゅう3", companyName: "会社3"},
-    {title: "ぼしゅう4", companyName: "会社4"}
-  ]);
+  const baseUrl: string = "https://910f8d82-868e-4ac2-981d-af7621255ff8.mock.pstmn.io/recruitments";
+  const recommendedUrl: string = baseUrl + "/recommended";
+  useEffect(() => {
+    type Props = {
+      title: string,
+      company: {
+        name: string
+      }
+    }
+    axios.get(baseUrl).then(res => {
+      const data: {recruitments: Props[]} = res.data;
+      const recruitments = data.recruitments;
+      const array = recruitments.map(r => (
+        {title: r.title, companyName: r.company.name}
+      ));
+      setAll(array);
+    });
+    axios.get(recommendedUrl).then(res => {
+      const data: Props[] = res.data;
+      const array = data.map(r => (
+        {title: r.title, companyName: r.company.name}
+      ));
+      setRecommnedations(array);
+    })
+  }, []);
 
   const {account} = useCurrentAccount();
 
-  type RecruitmentCardProps = React.ComponentProps<typeof RecruitmentCard>;
-
-  const cardsList = (list: Array<RecruitmentCardProps>) => (
-    list.map((item, index) => (
+  const cardsList = (list: RecruitmentCardProps[]) => (
+    list.map((item, index: number) => (
       <li key={index}>
         <div className={styles.wrapper}>
           <RecruitmentCard
@@ -43,7 +53,7 @@ const RecruitmentIndexPage = () => {
 
   return (
     <>
-      {account &&
+      {!account &&
         <div className={styles.recommendations}>
           <h1>おすすめの募集</h1>
           <ul>
